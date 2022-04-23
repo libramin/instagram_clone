@@ -4,10 +4,10 @@ import 'package:instagram_clone/widget/comment.dart';
 import 'package:instagram_clone/widget/my_progress_indicator.dart';
 import 'package:instagram_clone/widget/rounded_avatar.dart';
 import '../constants/common_size.dart';
+import '../constants/screen_size.dart';
 
 class Post extends StatelessWidget {
   final int index;
-  Size? size;
 
   Post(
     this.index, {
@@ -16,7 +16,6 @@ class Post extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (size == null) size = MediaQuery.of(context).size;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
